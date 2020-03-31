@@ -47,16 +47,16 @@ BP_ECRC,	BP_A_GRAVE,	BP_Y,		BP_X,		BP_DOT,		BP_K,		KC_TAB,
 KC_ESC,		KC_INS,		KC_LGUI,	KC_LCTL,	KC_LALT,
 						        	                	                        KC_MPLY,	KC_HYPR,
 						        	                                                                TT(NUMK),
-						        	        			KC_SPC,		KC_LSHIFT,	MO(FNAV),
+						        	        			KC_SPC,		KC_LSHIFT,	TT(FNAV),
 // Right hand
 				KC_SLCK,	BP_AT,		BP_PLUS,	BP_MINUS,	BP_SLASH,	BP_ASTR,	BP_EQUAL,
 				KC_CAPSLOCK,	BP_DCRC,	BP_V,		BP_D,		BP_L,		BP_J,		BP_Z,
 						BP_C,		BP_T,		BP_S,		BP_R,		BP_N,		BP_M,
 				KC_NUMLOCK,	BP_APOS,	BP_Q,		BP_G,		BP_H,		BP_F,		BP_CCED,
-						        	BP_ALGR,	KC_RCTL,	KC_RGUI,	KC_LALT,        KC_PAUSE,
+						        	KC_ALGR,	KC_RCTL,	KC_RGUI,	KC_LALT,        KC_PAUSE,
 KC_MPRV,  KC_MNXT,
 TT(NUMK),
-MO(FNAV),	KC_RSHIFT,	KC_ENTER),
+TT(FNAV),	KC_RSHIFT,	KC_ENTER),
 /* Keymap 1: function / special characters / volume / navigation
  *
  * ,--------------------------------------------------.                                  ,--------------------------------------------------.
