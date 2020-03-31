@@ -191,8 +191,20 @@ void matrix_init_user(void) {
 
 // Runs constantly in the background, in a loop.
 void matrix_scan_user(void) {
-
 };
+
+// Called whenever Num Lock, Caps Lock, Scroll Lock, Compose or Kana
+// state changes.
+bool led_update_user(led_t led_state) {
+  // Caps lock (blue)
+  if (led_state.caps_lock) {
+    ergodox_right_led_3_on();
+  } else {
+    ergodox_right_led_3_off();
+  }
+
+  return true;
+}
 
 // Runs whenever there is a layer state change.
 uint32_t layer_state_set_user(uint32_t state) {
