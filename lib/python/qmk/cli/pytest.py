@@ -7,10 +7,11 @@ import subprocess
 from milc import cli
 
 
-@cli.subcommand('QMK Python Unit Tests')
+@cli.subcommand('QMK Python Unit Tests', hidden=False if cli.config.user.developer else True)
 def pytest(cli):
     """Run several linting/testing commands.
     """
-    flake8 = subprocess.run(['flake8', 'lib/python', 'bin/qmk'])
     nose2 = subprocess.run(['nose2', '-v'])
+    flake8 = subprocess.run(['flake8', 'lib/python', 'bin/qmk'])
+
     return flake8.returncode | nose2.returncode

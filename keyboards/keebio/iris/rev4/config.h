@@ -19,11 +19,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xCB10
-#define PRODUCT_ID      0x1256
+#define PRODUCT_ID      0x4256
 #define DEVICE_VER      0x0400
 #define MANUFACTURER    Keebio
-#define PRODUCT         Iris Keyboard
-#define DESCRIPTION     Split 50 percent ergonomic keyboard
+#define PRODUCT         Keebio Iris Rev. 4
 
 /* key matrix size */
 // Rows are doubled-up
